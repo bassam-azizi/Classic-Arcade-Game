@@ -1,0 +1,161 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+ /* ******* FIRST MODULE : Welcome Module SECTION ******* */
+ /* STYLING THE BOX OF THE MODULE */
+#welcomeModule{
+    width : 50% ;
+    height : 50%;
+    background-color:rgba(161, 83, 85, 0.4);
+    position:fixed;
+    z-index:1;
+    left:0;
+    right:0;
+    margin:auto;
+    overflow: visible;
+}
+
+/* STYLING THE HEADERS AND THE TEXT INSIDE THE MODULE */
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 40px;
+    color: blueviolet;
+    width: 100%;
+    display: block;
+    background-color:#FFF;
+}
+.gameName{
+    text-align : center;
+    margin:0 auto;
+    width:700px;
+    padding:0;
+}
+h1{
+    color: white;
+    font-family : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 5px;
+    font-size:2em;
+    
+}
+#game_nm::after{
+    content:"By Udacity";
+    display:block;
+    text-align:right;
+    margin:0;
+    padding:0;
+    color:'rgba(0,0,255,0.5)';
+    font-size:15px;
+}
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:blueviolet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+}
+
+/* styling the players inside the module  */
+#allPlayers{
+    display:block;
+}
+.player{
+    display: inline-block;
+    background: url('Sprites.png') no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left; 
+}
+.player:focus{
+    border: 5px ridge blueviolet;
+}
+.selected{
+    border: 7px inset 'rgba(0,255,0,0.5)';
+    background-color: #FFF;
+    border-radius: 4px;
+}
+
+.char-boy {
+    background-position: -0px -0px; 
+    width: 101px;
+    height: 171px;
+}
+.char-cat-girl {
+    background-position: -101px -0px;
+    width: 101px;
+    height: 171px;
+}
+.char-horn-girl {
+     background-position: -0px -171px;
+     width: 101px;
+     height: 171px; 
+    }
+.char-pink-girl { 
+    background-position: -101px -171px;
+    width: 101px;
+    height: 171px; 
+}
+.char-princess-girl {
+    background-position: -0px -342px;
+    width: 101px;
+    height: 171px;
+}
+
+ /* THE BUTTON OF STARTING GAME */
+#startGame{
+    margin: 0 auto;
+    margin-top:50px;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(138, 43, 226);
+    font-family: Helvetica, sans-serif; 
+    font-size:16px;
+    font-weight: 600;
+}
+#startGame:focus{
+    border: 5px ridge blueviolet;
+}
+#game_bridge{
+    width: 100;
+    margin-bottom: 0;
+    visibility: hidden;
+}
+
+/* ********* THE GAME OVER MODULE ******* */
+#finishModule{
+    background-color: rgba(78, 71, 71, 0.6);
+    display: none;
+    width:100%;
+    height:100%;
+    position: fixed;
+    z-index: 1;
+    left:0;
+    right: 0;
+    overflow: auto;
+}
+#moduleBox{
+    background-color: rgba(47, 137, 221, 0.6);
+    -webkit-box-shadow: -4px 7px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 7px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: -4px 7px 5px -1px rgba(0,0,0,0.75);
+    border-radius: 2px;
+    width: 400px;
+    height: 250px;
+    position: fixed;
+    z-index:1;
+    left:0;
+    right: 0;   
+    margin: auto;
+    margin-top: 300px; 
+    overflow: auto;
+}
+#moduleButton{
+    color: rgb(138, 43, 226);
+    font-family: Helvetica, sans-serif; 
+    font-size:12px;
+    font-weight: 600;
+    padding: 7px;
+    margin-top:40px;    
+    margin-bottom: 20px;
+}
